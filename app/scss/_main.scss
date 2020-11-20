@@ -1,0 +1,74 @@
+.container {
+  display: grid;
+  height: 100vh;
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    max-width: 350px;
+    margin: auto;
+    padding: 4rem 2rem;
+    padding-bottom: 2rem;
+    background-color: #fff;
+    background-image: url(/images/bg-pattern-card.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .profile {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .picture {
+        width: 100px;
+        height: 100px;
+        background-image: url(/images/image-victor.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        border: 4px #fff solid;
+        margin-top: 1.6rem;
+      }
+      .person {
+        display: flex;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        .name {
+          font-weight: bold;
+          margin-right: 0.5rem;
+        }
+        .age {
+          color: $darkBlue;
+        }
+      }
+      .address {
+        color: $darkGray;
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+    .reach {
+      display: flex;
+      border-top: 0.5px solid $darkGray;
+      padding-top: 2rem;
+      .reachable {
+        margin-right: 2rem;
+        &:last-child {
+          margin-right: 0rem;
+        }
+        .number {
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+        }
+        .text {
+          font-size: 0.95rem;
+          color: $darkGray;
+        }
+      }
+    }
+  }
+}
